@@ -10,7 +10,7 @@ Welcome to the Wageningen Data Science Week FAIR data sprint!
 12.30 Lunch  
 
 ### Afternoon 
-13.30 Introduction to metadata  
+13.30 Introduction to linked metadata  
 14.00 Metadata excercises  
 15.00 Energizer with SCB Bongerd  
 15.15 FAIR data in practice presentation by Rob Lokers  
@@ -32,3 +32,10 @@ Welcome to the first part of the FAIR data sprint exercises. In this exercise we
 ---
 4. Next, go to the Library Carpentries [Openrefine lessons](https://librarycarpentry.org/lc-open-refine/)
 5. Before you start the exercise, make sure to [install Openrefine](http://openrefine.org/download.html) and downlad the [sample file](https://github.com/LibraryCarpentry/lc-open-refine/raw/gh-pages/data/doaj-article-sample.csv)
+6. Next follow the exercises on the Library Carpentries page. Results will be discussed plenary.
+
+## Linked metadata
+Watch the [presentation](IntroToLinkedMetadata.pdf) on Linked Data given by [Erik van den Bergh](https://github.com/erikvdbergh)
+
+### Exercises
+1. 
