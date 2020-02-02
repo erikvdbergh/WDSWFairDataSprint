@@ -13,7 +13,7 @@ Once created, go to setup -> repositories -> connect to your created repository 
 5.	Load your data ([ontology.ttl](ontology.ttl), [resource.ttl](resource.ttl)) into graphdb -> Import -> RDF -> Upload RDf files -> select both files -> files should appear in the graphdb overview. Click import on both files (use default settings).
 6.	You can now query your data! Go to SPARQL and write your first queries…
  
-Understanding the basics
+## Understanding the basics
 To understand the basics of SPARQL and directly querying it we are going to use a very basic database.
 This database is stored in the "basic" folder of the exercises. The ontology and the resource file need to be loaded into graphdb in a repository of your own making.
 This database, developed by the Swiss Bioinformatics Institute, consists of the following elements: 
