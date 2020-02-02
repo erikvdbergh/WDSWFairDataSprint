@@ -1,8 +1,7 @@
 # Linked Metadata exercises
 ## 1st Part: Learning SPARQL
 Please follow this link below:
-1.	Download GraphDB Free from : https://www.ontotext.com/products/graphdb/graphdb-free/. You'll need to register with an existing email address, after which you will have the option to download a standalone, Mac or Windows version.
-2.	Follow the quick start guide: http://graphdb.ontotext.com/documentation/free/quick-start-guide.html
+1.	Download GraphDB Free from : https://www.ontotext.com/products/graphdb/graphdb-free/. You'll need to register with an existing email address, after which you will have the option to download a standalone, Mac or Windows version. Follow the relevant installation procedure, and you should end up in a webpage at [localhost:7200](localhost:7200) in the GraphDB tutorial. In case of trouble, refer to the quick start guide: http://graphdb.ontotext.com/documentation/free/quick-start-guide.html
 3.	Create a repository for the SPARQL exercise: http://graphdb.ontotext.com/documentation/free/quick-start-guide.html#create-a-repository
 In short, go to your local instance (often accessible via http://localhost:7200). Click on setup on the left -> then on repositories -> Create new repository -> Give it a name and leave the rest as default.
 Once created, go to setup -> repositories -> connect to your created repository if you not already did that.
