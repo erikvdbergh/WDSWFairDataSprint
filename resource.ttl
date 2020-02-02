@@ -1,0 +1,65 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix tto: <http://example.org/tuto/ontology#> .
+@prefix ttr: <http://example.org/tuto/resource#> .
+
+ttr:John
+	rdf:type dbo:Person ;
+	dbp:name "John" ;
+	dbp:birthDate "1942-02-02"^^xsd:date ;
+    tto:sex "male" ;
+	tto:pet ttr:TomCat, ttr:LunaCat;
+    .
+    	
+ttr:William
+	rdf:type dbo:Person ;
+	dbp:name "William";
+	dbp:birthDate "1978-07-20"^^xsd:date ;
+	tto:sex "male" ;
+    dbo:parent ttr:John ;
+    tto:pet ttr:RexDog;
+	.
+
+ttr:Eve
+	rdf:type dbo:Person ;
+	dbp:name "Eve";
+	dbp:birthDate "2006-11-03"^^xsd:date ;
+	dbo:parent ttr:William ;
+    tto:sex "female";
+	.
+
+ttr:TomCat
+	rdf:type tto:Cat ;
+	dbp:name "Tom";
+	tto:sex "male";
+	tto:color "grey";
+	tto:weight 5.8 ;
+	.
+
+ttr:LunaCat
+	rdf:type tto:Cat ;
+	dbp:name "Luna" ;
+	tto:sex "female" ;
+	tto:color "violet";
+	tto:weight 4.2;
+    .
+
+ttr:RexDog
+	rdf:type tto:Dog ;
+	dbp:name "Rex";
+	tto:sex "male";
+	tto:color "brown" ;
+	tto:weight 8.8 ;
+	.
+
+ttr:SnuffMonkey
+	rdf:type tto:Monkey ;
+	dbp:name "Snuff"^^xsd:string ;
+	tto:color "golden"^^xsd:string ;
+	tto:sex "male" ;
+	tto:weight "3.6"^^xsd:decimal ;
+	.
