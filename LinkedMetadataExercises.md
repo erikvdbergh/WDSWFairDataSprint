@@ -17,6 +17,7 @@ Once created, go to setup -> repositories -> connect to your created repository 
 To understand the basics of SPARQL and directly querying it we are going to use a very basic database.
 This database is stored in the "basic" folder of the exercises. The ontology and the resource file need to be loaded into graphdb in a repository of your own making.
 This database, developed by the Swiss Bioinformatics Institute, consists of the following elements: 
+
 ![database layout image](demodblayout.png)
  
 This database consists of a large variety of creatures. Some are further classified as Persons while others are falling under the Animal category.  
