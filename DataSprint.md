@@ -53,4 +53,4 @@ Remember the steps of today:
 2. Optional: Link (meta)data using GraphDB
 3. Fill in an upload request on your repository of choice and upload your data!
 
-Remember to update the [FAIR data log](FairDataLog.md) of today once you are done!
+Remember to update the [FAIR data log](FAIRDataLog.md) of today once you are done!
