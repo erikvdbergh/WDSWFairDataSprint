@@ -24,18 +24,18 @@ This database consists of a large variety of creatures. Some are further classif
 SPARQL/RDF work according triple statements as directed by the arrows.  
 For example John is of Type Person.  
 To reduce the amount of typing in this exercise these are the prefixes used:
-  *PREFIX dbo:<http://dbpedia.org/ontology/>
-  *PREFIX dbp:<http://dbpedia.org/property/>
-  *PREFIX dbpedia:<http://dbpedia.org/resource/>
-  *PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  *PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-  *PREFIX tto:<http://example.org/tuto/ontology#>
-  *PREFIX ttr:<http://example.org/tuto/resource#>
-  *PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+* PREFIX dbo:<http://dbpedia.org/ontology/>
+* PREFIX dbp:<http://dbpedia.org/property/>
+* PREFIX dbpedia:<http://dbpedia.org/resource/>
+* PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+* PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+* PREFIX tto:<http://example.org/tuto/ontology#>
+* PREFIX ttr:<http://example.org/tuto/resource#>
+* PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
 
 **These prefixes are to be placed at the top of each query executed and in GraphDB should be automatically added upon writing the queries**
 
-
+## Exercises
 In the top right Choose repository select BASIC. Then select SPARQL on the left to obtain the SPARQL interface from GraphDB.
 When executing a query, all URLs (in blue) can be clicked upon which gives additional information and gives insights into what other properties can be directly queried from this statement.
 
@@ -89,8 +89,9 @@ WHERE {
 }
 ```	
 
-6. Nearly identical to the previous statement but here we use the **OPTIONAL** around one or more statements.
-Who does not have a pet?...
+Nearly identical to the previous statement but here we use the **OPTIONAL** around one or more statements.
+
+6. Who does not have a pet?...
 Which persons do not have a pet using a **filter** and **not exists**
 ```
 SELECT ?person ?pet
@@ -125,9 +126,9 @@ WHERE {
 	?subSpecies rdfs:subxxx+ tto:Creature .
 }
 ```	
-	This returns the first level of subclassess that are connected to the Creature class.
-9.
-Select all animals...
+This returns the first level of subclassess that are connected to the Creature class.
+
+9. Select all animals...
 When looking at the figure you can see that Cat, Dog and Monkey are a subclassof Animal. These subclassof relations are in place to group one or more classess to a parent class. 
 ```
 SELECT ?thing ?type
@@ -148,7 +149,8 @@ WHERE {
 	...   ...  ?grandfather  .
 }
 ```
-	Here we use the dbo:pxxx twice to retrieve the father of the father
+Here we use the dbo:pxxx twice to retrieve the father of the father
+
 11. Select the grandfather of Eve using SequencePaths
 The previous query as shown here can be more simplified using SequencePaths. Try to combine the two statements using a "/"
 ```
@@ -179,5 +181,4 @@ WHERE {
 } ORDER BY ?...
 ```	
 
-Using the && symbols you can apply a double filter here. First we filter for all the weights abouve 5kg and secondly for all the weights below 7kg.
-
+Using the && symbols you can apply a double filter here. First we filter for all the weights above 5kg and secondly for all the weights below 7kg.
