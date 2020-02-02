@@ -10,7 +10,8 @@ Once created, go to setup -> repositories -> connect to your created repository 
 4.	Enable Autocompletion. This is an autocomplete feature that will help searching for variable names.
        Left panel of GraphDB click on Setup -> Autocomplete -> set the switch to "on"
   
-5.	Load your data ([ontology.ttl](ontology.ttl), [resource.ttl](resource.ttl)) into graphdb -> Import -> RDF -> Upload RDf files -> select both files -> files should appear in the graphdb overview. Click import on both files (use default settings).
+5.	Download the example files data ([ontology.ttl](ontology.ttl), [resource.ttl](resource.ttl)) 
+into graphdb -> Import -> RDF -> Upload RDf files -> select both files -> files should appear in the graphdb overview. Click import on both files (use default settings).
 6.	You can now query your data! Go to SPARQL and write your first queries…
  
 ## Understanding the basics
@@ -39,9 +40,11 @@ To reduce the amount of typing in this exercise these are the prefixes used:
 In the top right Choose repository select BASIC. Then select SPARQL on the left to obtain the SPARQL interface from GraphDB.
 When executing a query, all URLs (in blue) can be clicked upon which gives additional information and gives insights into what other properties can be directly queried from this statement.
 
+**In the following exercises, try to fill in the ellipses (...) to make the queries work.**
+
 
 1. Select all things that are Persons...
-Selects subjects connected to the object dbo:Person via the predicate rdf:type ?thing is the only variable
+Selects subjects connected to the object dbo:Person via the predicate rdf:type. `?thing` is the only variable.
 
 ```
 SELECT ?...
@@ -51,7 +54,7 @@ WHERE {
 ```
 
 2. Select all persons that are Female...
-Using the results from the previous query you can browse to get more information. For example when clicking on John, it shows that it has a birthdate, a name and ....
+Using the results from the previous query you can browse to get more information. For example when clicking on John, it shows that it has a birthdate, a name and what else?
 
 ```
 SELECT ?person
