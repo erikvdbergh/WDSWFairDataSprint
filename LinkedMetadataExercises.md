@@ -35,7 +35,7 @@ To reduce the amount of typing in this exercise these are the prefixes used:
 **These prefixes are to be placed at the top of each query executed and in GraphDB should be automatically added upon writing the queries**
 
 ## Exercises
-In the top right Choose repository select BASIC. Then select SPARQL on the left to obtain the SPARQL interface from GraphDB.
+Select SPARQL on the left menu to obtain the SPARQL interface from GraphDB.
 When executing a query, all URLs (in blue) can be clicked upon which gives additional information and gives insights into what other properties can be directly queried from this statement.
 
 **In the following exercises, try to fill in the ellipses (...) to make the queries work.**
@@ -58,7 +58,7 @@ Using the results from the previous query you can browse to get more information
 SELECT ?person
 WHERE {
    ?person rdf:type dbo:... .
-    ?person tto:sex "" .
+    ?person tto:sex "..." .
 }
 ```
 
