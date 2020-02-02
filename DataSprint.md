@@ -37,5 +37,20 @@ Welcome to the first part of the FAIR data sprint exercises. In this exercise we
 ## Linked metadata
 Watch the [presentation](IntroToLinkedMetadata.pdf) on Linked Data given by [Erik van den Bergh](https://github.com/erikvdbergh)
 
-### Exercises
-1. 
+### Intro to SPARQL: Exercises
+Follow the exercises in [Linked Metadata Exercises](LinkedMetadataExercises.md). The results will be discussed plenary.
+
+### Applying Linked Metadata to Real life data
+
+## Uploading to Repositories
+Watch the [presentation](Repositories.pdf) on FAIR repositories given by [Erik van den Bergh](https://github.com/erikvdbergh).
+
+### Repositories: uploading data
+This is it! Using the skills you have obtained during the day you should be able to deposit FAIR data in a repository of your choice. Some good options are [B2SHARE](https://b2share.eudat.eu) or [4TU](https://data.4tu.nl/repository/). A domain specific repository can also be a good option such as the European Nucleotide Sequence Archive (https://www.ebi.ac.uk/ena).
+
+Remember the steps of today:
+1. Clean data using spreadsheet programs or Openrefine
+2. Optional: Link (meta)data using GraphDB
+3. Fill in an upload request on your repository of choice and upload your data!
+
+Remember to update the [FAIR data log](FairDataLog.md) of today once you are done!
