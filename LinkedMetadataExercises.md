@@ -38,7 +38,7 @@ To reduce the amount of typing in this exercise these are the prefixes used:
 Select SPARQL on the left menu to obtain the SPARQL interface from GraphDB.
 When executing a query, all URLs (in blue) can be clicked upon which gives additional information and gives insights into what other properties can be directly queried from this statement.
 
-**In the following exercises, try to fill in the ellipses (...) to make the queries work.**
+**In the following exercises, try to fill in the ellipses (...) to make the queries work. Use the picture above as a guide.**
 
 
 1. Select all things that are Persons...
@@ -75,8 +75,8 @@ In this query we ask for more than one thing. Namely a person and their pets.
 ```
 SELECT ?person ?pet
 WHERE {
-	?person rdf:type dbo:xxx .
-  ?person tto:xxx ?pet .
+	?person rdf:type dbo:... .
+  ?person tto:... ?pet .
 }
 ```
 5. Select persons and if they have one, their pets...
@@ -85,8 +85,8 @@ In this case we do not want to be very strict. We would like to know who has a p
 ```
 SELECT ?person ?pet
 WHERE {
-	?person rdf:type dbo:xxx .
-  optional { ?person tto:xxx ?pet }.
+	?person rdf:type dbo:... .
+  optional { ?person tto:... ?pet }.
 }
 ```	
 
@@ -97,18 +97,18 @@ Which persons do not have a pet using a **filter** and **not exists**
 ```
 SELECT ?person ?pet
 WHERE {
-	?person rdf:type dbo:xxx .
-	FILTER NOT EXISTS {?person tto:xxx ?pet }.
+	?person rdf:type dbo:... .
+	FILTER NOT EXISTS {?person tto:... ?pet }.
 	}
 ```
 Again we first select the persons in the database and through the **filter** we return all persons that do not have this statement.
 
 7. Which direct subclassess are connected to a creature...
-As can be seen in the figure there are classess who are subclass of other classess. For example a Person is a subclass of a Creature. These subclass relations are connected via rdfs:subClassOf a standard in SPARQL and RDF.
+As can be seen in the figure there are classess who are subclass of other classess. For example a Person is a subclass of a Creature. These subclass relations are connected via the rdfs:subClassOf standard in SPARQL and RDF.
 ```
 SELECT ?subSpecies
 WHERE {
-	?subSpecies rdfs:subxxx tto:Creature .
+	?subSpecies rdfs:... tto:Creature .
 }
 ```
 This returns the first level of subclassess that are connected to the Creature class.
@@ -124,7 +124,7 @@ There are different ways to express the property path level
 ```
 SELECT ?subSpecies
 WHERE {
-	?subSpecies rdfs:subxxx+ tto:Creature .
+	?subSpecies rdfs:... tto:Creature .
 }
 ```	
 This returns the first level of subclassess that are connected to the Creature class.
@@ -134,7 +134,7 @@ When looking at the figure you can see that Cat, Dog and Monkey are a subclassof
 ```
 SELECT ?thing ?type
 WHERE {
-	?type rdfs:subClassOf+ tto:xxx .
+	?type rdfs:subClassOf+ tto:... .
   ?thing a ?type .
 }
 ```
@@ -142,25 +142,24 @@ WHERE {
 We ask for many kind of animals here. Cat, Dog and Monkey all part of the Animal class. To get the parent class of a Person/Cat/Dog... you use rdfs:subClassOf. As a class can be a subclassof another class which in turn can be a class of another subclass you can use a + in your query. This will retrieve all entries that in some distance a connection to Animal. 
 
 10. Select the grandfather of Eve
-Try to obtain the grandfather of Eve through the dbo:parent property. 
+Try to obtain the grandfather of Eve through the dbo:parent property. (Hint: 'grandfather' in this sense meanse parent of parent)
 ```
 SELECT ?grandfather
 WHERE {
-	ttr:Eve dbo:parent  .... .
+	ttr:Eve dbo:parent  ... .
 	...   ...  ?grandfather  .
 }
 ```
-Here we use the dbo:pxxx twice to retrieve the father of the father
 
 11. Select the grandfather of Eve using SequencePaths
 The previous query as shown here can be more simplified using SequencePaths. Try to combine the two statements using a "/"
 ```
 SELECT ?grandfather
 WHERE {
-	ttr:Eve dbo:xxx / dbo:xxx ?grandfather  .
+	ttr:Eve dbo:... / dbo:... ?grandfather  .
 }
 ```	
-Here we use the dbo:xxx twice without any variable in between. This tells sparql that the "object" of Eve is to be used directly as a subject in the next dbo:xxx statement. 		
+Here we use the dbo:... twice without any variable in between. This tells sparql that the "object" of Eve is to be used directly as a subject in the next dbo:... statement. 		
 
 12. What does the following query do?  
 ```
@@ -177,7 +176,7 @@ Using the tto:weight we can retrieve the weight value and use FILTER to select a
 ```
 SELECT ?thing ?weight
 WHERE {
-	?thing tto:.... ?weight .
+	?thing tto:... ?weight .
 	FILTER (?weight > ... && ?weight < ...) 
 } ORDER BY ?...
 ```	
