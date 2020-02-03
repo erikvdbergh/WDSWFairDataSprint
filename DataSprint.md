@@ -20,7 +20,7 @@ Welcome to the Wageningen Data Science Week FAIR data sprint!
 19.00 Uploading data to repositories  
 20.30 Conclusions & end  
 
-## Part 1 Introduction to FAIR data
+## Part 1: Introduction to FAIR data
 Watch the [presentation](IntroToFAIRdata.pdf) on FAIR data given by [Erik van den Bergh](https://github.com/erikvdbergh)
 
 ### Exercises
@@ -34,7 +34,7 @@ Welcome to the first part of the FAIR data sprint exercises. In this exercise we
 5. Before you start the exercise, make sure to [install Openrefine](http://openrefine.org/download.html) and downlad the [sample file](https://github.com/LibraryCarpentry/lc-open-refine/raw/gh-pages/data/doaj-article-sample.csv)
 6. Next follow the exercises on the Library Carpentries page. Results will be discussed plenary.
 
-## Linked metadata
+## Part 2: Linked metadata
 Watch the [presentation](IntroToLinkedMetadata.pdf) on Linked Data given by [Erik van den Bergh](https://github.com/erikvdbergh)
 
 ### Intro to SPARQL: Exercises
@@ -44,7 +44,7 @@ Follow the exercises in [Linked Metadata Exercises](LinkedMetadataExercises.md).
 
 Depending on time, continue with [Part 2 of the linked data exercises](FoodFraudLinkeddata.md).
 
-## Uploading to Repositories
+## Part 3: Uploading to Repositories
 Watch the [presentation](Repositories.pdf) on FAIR repositories given by [Erik van den Bergh](https://github.com/erikvdbergh).
 
 ### Repositories: uploading data
