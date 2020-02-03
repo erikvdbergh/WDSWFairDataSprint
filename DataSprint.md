@@ -42,6 +42,8 @@ Follow the exercises in [Linked Metadata Exercises](LinkedMetadataExercises.md).
 
 ### Applying Linked Metadata to Real life data
 
+Depending on time, continue with [Part 2 of the linked data exercises](FoodFraudLinkeddata.md).
+
 ## Uploading to Repositories
 Watch the [presentation](Repositories.pdf) on FAIR repositories given by [Erik van den Bergh](https://github.com/erikvdbergh).
 
