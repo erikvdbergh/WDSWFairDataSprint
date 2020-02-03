@@ -26,6 +26,7 @@ In this part we will use some actual data of food fraud to train with the possib
 |HazardSamplingDate|	Date when this product was sampled|
 |Subject.Description|	Additional information about this incidence|
 
+## Data loading & refining
 1.	Create a repository for Food Fraud data: http://graphdb.ontotext.com/documentation/free/quick-start-guide.html#create-a-repository
 In short, go to your local instance (often accessible via http://localhost:7200). Click on setup on the left -> then on repositories -> Create new repository -> Give it a name and leave the rest as default.
 Once created, go to setup -> repositories -> connect to your created repository if you not already did that.
@@ -61,5 +62,66 @@ BIND(IRI(spif:buildString("http://example.com/resource/{?1}", ENCODE_FOR_URI(?Re
 BIND(IRI(spif:buildString("http://www.wikidata.org/entity/{?1}", ENCODE_FOR_URI(?wdNotificationFromCountryCode))) AS ?wdNotificationFromCountryCodeIRI
 ```
 Test your constructed query by pressing “Run”. Especially check the wdNotificationFromCountryCodeIRI field. What has happened?
+
 10.	If everything was correct, insert these data into the project: replace the CONSTRUCT word in the query editor with an INSERT tag and remove the LIMIT 100 at the bottom of this query. Then press RUN. Your statements are inserted.
+
+## SPARQL Exercises
+In the following exercises, try to fill in the blanks (…)
+
+1. List unique predicates in the dataset
+
+```
+SELECT DISTINCT ?...
+WHERE {
+    ?s ?p ?o .
+} LIMIT  100
+```
+
+2. List countries based on number of food fraud notifications (graph example)
+
+```
+PREFIX mydata: <http://example.com/resource/>
+PREFIX spif: <http://spinrdf.org/spif#>
+
+SELECT  ?country 
+WHERE
+{
+    ?s mydata:NotificationFrom ?country .
+} 
+```
+Try to use the pivot chart tab, to explore visualizing the data
+
+3. What type of fraud originates from Italy?
+
+```
+PREFIX mydata: <http://example.com/resource/>
+PREFIX spif: <http://spinrdf.org/spif#>
+
+SELECT *
+WHERE
+{
+  ?s mydata:… "Italy" .
+  ?s mydata:HazardSubstance ?o .
+} 
+```
+
+4. Which product has the highest number of frauds?
+
+5. What is the GDP of the country where most food fraud originates from ?
+```
+PREFIX fraud:<http://example.com/resource/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+ 
+select ?origin ?gdp (COUNT(DISTINCT(?fraud)) AS ?count) where { 
+    ?fraud fraud:wdCountryOriginCountryCode ?country .
+    ?fraud fraud:CountryOrigin ?origin .
+    SERVICE <https://query.wikidata.org/sparql> {
+        ?country wdt:P2131 ?gdp .        
+    }
+} GROUP BY ?origin ?gdp
+```
+
+
+
+
 
