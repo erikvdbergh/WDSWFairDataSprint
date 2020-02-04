@@ -66,7 +66,7 @@ Test your constructed query by pressing “Run”. Especially check the wdNotifi
 10.	If everything was correct, insert these data into the project: replace the CONSTRUCT word in the query editor with an INSERT tag and remove the LIMIT 100 at the bottom of this query. Then press RUN. Your statements are inserted.
 
 ## SPARQL Exercises
-In the following exercises, try to fill in the blanks (…)
+Before starting these exercises, make sure the previous import was done correctly. If you were unable to complpete, create a new repository and import the correctly annotated dataset [here](rasff_processed_adulteration_fraud.ttl). In the following exercises, try to fill in the blanks (…)
 
 1. List unique predicates in the dataset
 
