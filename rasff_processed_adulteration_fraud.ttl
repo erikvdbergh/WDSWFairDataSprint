@@ -1,0 +1,948 @@
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix mydata: <http://example.com/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mydata:20.130.325 a mydata:FraudEntry;
+  mydata:ActionTaken "return to consignor";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Slovakia";
+  mydata:DateOfCase "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Austria";
+  mydata:HazardAnalyticalResult "horse DNA: 2.8";
+  mydata:HazardSamplingDate "2013-02-18T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-04-18T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Austria";
+  mydata:Product "chilled beef veal turkey kebab";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.325";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q214>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q40>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q40> .
+
+mydata:20.130.332 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "France";
+  mydata:DateOfCase "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Belgium";
+  mydata:HazardAnalyticalResult "horse DNA: > 1";
+  mydata:HazardSamplingDate "2013-02-22T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-03-15T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Belgium";
+  mydata:Product "lasagne bolognaise";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "20.130.332";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q142>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q31>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q31> .
+
+mydata:20.130.424 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-03-25T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Estonia";
+  mydata:HazardAnalyticalResult "presence of horse DNA: 100";
+  mydata:HazardSamplingDate "2013-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-05-13T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Estonia";
+  mydata:Product "stewed beef";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.424";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q191>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q191> .
+
+mydata:20.130.329 a mydata:FraudEntry;
+  mydata:ActionTaken "informing recipient(s)";
+  mydata:Classifications "food  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Germany";
+  mydata:HazardAnalyticalResult "Horse DNA > 1";
+  mydata:HazardSamplingDate "2013-02-26T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-10-05T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "frozen beef";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.329";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q183>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:20.130.401 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "food  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-03-19T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Germany";
+  mydata:HazardAnalyticalResult "presence of unlabelled horse DNA: > 1";
+  mydata:HazardSamplingDate "1970-01-01T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-03-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "beef roulade in spicy sauce";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "20.130.401";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q183>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:20.171.205 a mydata:FraudEntry;
+  mydata:ActionTaken "return to consignor";
+  mydata:Classifications "feed  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2017-10-08T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Germany";
+  mydata:HazardAnalyticalResult "unlabelled urea: 1.99";
+  mydata:HazardSamplingDate "2017-07-19T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-08-18T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Austria";
+  mydata:Product "brewer's yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.171.205";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q183>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q40> .
+
+mydata:20.130.436 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Germany";
+  mydata:DateOfCase "2013-03-26T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Greece";
+  mydata:HazardAnalyticalResult "presence of horse DNA : >10";
+  mydata:HazardSamplingDate "2013-12-03T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-04-30T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Greece";
+  mydata:Product "canned beef";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.436";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q183>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q41>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q41> .
+
+mydata:20.130.392 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for attention  -  official control on the market";
+  mydata:CountryOrigin "Romania";
+  mydata:DateOfCase "2013-03-19T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Greece";
+  mydata:HazardAnalyticalResult "presence of equidae DNA: 100";
+  mydata:HazardSamplingDate "2013-02-21T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2015-12-18T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Greece";
+  mydata:Product "chilled salami rustic";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.392";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q218>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q41>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q41> .
+
+mydata:20.130.437 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Latvia";
+  mydata:DateOfCase "2013-03-26T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Greece";
+  mydata:HazardAnalyticalResult "presence of horse DNA: 95.8";
+  mydata:HazardSamplingDate "2013-12-03T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-11-04T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Greece";
+  mydata:Product "chilled salami";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.437";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q41>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q41> .
+
+mydata:20.130.505 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for attention  -  company's own check";
+  mydata:CountryOrigin "Spain";
+  mydata:DateOfCase "2013-09-04T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Hungary";
+  mydata:HazardAnalyticalResult "horse DNA detected: 100";
+  mydata:HazardSamplingDate "2013-03-15T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-11-21T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "France";
+  mydata:Product "frozen beef meat";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.505";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q29>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q28>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q142> .
+
+mydata:20.111.086 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2011-10-08T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Hungary";
+  mydata:HazardAnalyticalResult "vegetable fats 40.5 and oils 34.2";
+  mydata:HazardSamplingDate "2011-08-07T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "g/100g";
+  mydata:LastUpdate "2011-06-10T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Hungary";
+  mydata:Product "milk powder";
+  mydata:ProductCategory "milk and milk products";
+  mydata:Reference "20.111.086";
+  mydata:RiskDecision "undecided";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q28>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q28> .
+
+mydata:20.110.612 a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "feed  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Slovakia";
+  mydata:DateOfCase "2011-10-05T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Hungary";
+  mydata:HazardAnalyticalResult "ammonium sulphate: 27.5";
+  mydata:HazardSamplingDate "2011-06-04T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2011-01-07T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Hungary";
+  mydata:Product "protein feed";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.110.612";
+  mydata:RiskDecision "undecided";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q214>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q28>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q28> .
+
+mydata:20.130.481 a mydata:FraudEntry;
+  mydata:ActionTaken "detained by operator";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-04-04T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Ireland";
+  mydata:HazardAnalyticalResult "presence of horse DNA: 60 - 100";
+  mydata:HazardSamplingDate "2013-01-29T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-04-30T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Ireland";
+  mydata:Product "frozen beef trimmings";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.481";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q27>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q27> .
+
+mydata:20.130.421 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "France";
+  mydata:DateOfCase "2013-03-25T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Italy";
+  mydata:HazardAnalyticalResult "horse DNA >1";
+  mydata:HazardSamplingDate "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-05-24T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Italy";
+  mydata:Product "frozen beef balls";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.421";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q142>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q38>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q38> .
+
+mydata:20.170.463 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "feed  -  information for follow-up  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-11-04T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Italy";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0.5";
+  mydata:HazardSamplingDate "2017-03-27T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2018-05-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Hungary";
+  mydata:Product "brewer's yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.463";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q38>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q28> .
+
+mydata:20.130.324 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Italy";
+  mydata:HazardAnalyticalResult "presence of horse DNA >1";
+  mydata:HazardSamplingDate "1970-01-01T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-03-06T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Italy";
+  mydata:Product "cooked minced beef";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.324";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q38>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q38> .
+
+mydata:2017.ANN a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "feed  -  border rejection  -  border control - consignment detained";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-03-28T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 1.1";
+  mydata:HazardSamplingDate "2017-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "2017.ANN";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.121 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "feed  -  information for attention  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-01-30T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 2.3";
+  mydata:HazardSamplingDate "2016-12-31T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-01-30T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.121";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:2017.ANL a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "feed  -  border rejection  -  border control - consignment detained";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-03-28T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0.5";
+  mydata:HazardSamplingDate "2017-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "2017.ANL";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:2017.ANJ a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "feed  -  border rejection  -  border control - consignment detained";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-03-27T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0,43";
+  mydata:HazardSamplingDate "2017-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-28T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "2017.ANJ";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.545 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "feed  -  information for attention  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-04-28T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0.4";
+  mydata:HazardSamplingDate "2017-03-19T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-05-05T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.545";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.114 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "feed  -  information for attention  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 2";
+  mydata:HazardSamplingDate "2017-02-01T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.114";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.034 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from recipient(s)";
+  mydata:Classifications "feed  -  information for attention  -  official control on the market";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-09-01T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "not labelled urea: 12";
+  mydata:HazardSamplingDate "2016-11-17T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "yeast for feed";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.034";
+  mydata:RiskDecision "serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.171.311 a mydata:FraudEntry;
+  mydata:ActionTaken "detained by operator";
+  mydata:Classifications "feed  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2017-08-30T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0.6";
+  mydata:HazardSamplingDate "2017-08-16T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-08-30T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "poultry meal";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.171.311";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:2017.BOE a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "feed  -  border rejection  -  border control - consignment detained";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-08-25T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0.17";
+  mydata:HazardSamplingDate "2017-06-08T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-07-09T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "2017.BOE";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.130.527 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "food  -  information for attention  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-11-04T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "horse DNA 9%";
+  mydata:HazardSamplingDate "2013-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-05-20T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "smoked sausage";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.527";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.115 a mydata:FraudEntry;
+  mydata:ActionTaken "seizure";
+  mydata:Classifications "feed  -  information for attention  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 12";
+  mydata:HazardSamplingDate "2017-09-01T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.115";
+  mydata:RiskDecision "serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.117 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "feed  -  information for attention  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 2.1";
+  mydata:HazardSamplingDate "2016-12-29T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.117";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:2017.ANM a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "feed  -  border rejection  -  border control - consignment detained";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-03-28T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 1";
+  mydata:HazardSamplingDate "2017-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-30T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "2017.ANM";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:2017.ANI a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "feed  -  border rejection  -  border control - consignment detained";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-03-27T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 0.9";
+  mydata:HazardSamplingDate "2017-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-03-28T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "2017.ANI";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.170.116 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "feed  -  information for attention  -  border control - consignment released";
+  mydata:CountryOrigin "Russia";
+  mydata:DateOfCase "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Latvia";
+  mydata:HazardAnalyticalResult "unlabelled urea: 2.4";
+  mydata:HazardSamplingDate "2017-03-01T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2017-01-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "fodder yeast";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.170.116";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q159>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q211>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.130.507 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Estonia";
+  mydata:DateOfCase "2013-10-04T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Lithuania";
+  mydata:HazardAnalyticalResult "detection of horse DNA 10";
+  mydata:HazardSamplingDate "2013-01-03T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2015-10-22T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Latvia";
+  mydata:Product "parmesan smoked sausage";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.507";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q191>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q37>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q211> .
+
+mydata:20.130.631 a mydata:FraudEntry;
+  mydata:ActionTaken "destruction";
+  mydata:Classifications "food  -  information for attention  -  official control on the market";
+  mydata:CountryOrigin "Germany";
+  mydata:DateOfCase "2013-07-05T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Poland";
+  mydata:HazardAnalyticalResult "horse DNA: > 1";
+  mydata:HazardSamplingDate "2013-02-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-06-21T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "pork rind";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.631";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q183>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:20.130.523 a mydata:FraudEntry;
+  mydata:ActionTaken "informing recipient(s)";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Germany";
+  mydata:DateOfCase "2013-11-04T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Portugal";
+  mydata:HazardAnalyticalResult "presence of horse DNA 1-10";
+  mydata:HazardSamplingDate "2013-06-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-03-05T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "frozen pizza";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "20.130.523";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q183>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q45>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:20.130.643 a mydata:FraudEntry;
+  mydata:ActionTaken "informing recipient(s)";
+  mydata:Classifications "food  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "France";
+  mydata:DateOfCase "2013-08-05T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Spain";
+  mydata:HazardAnalyticalResult "> 1 horse DNA";
+  mydata:HazardSamplingDate "2013-04-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-07-23T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Spain";
+  mydata:Product "ravioli with eggs and meat";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "20.130.643";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q142>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q29>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q29> .
+
+mydata:20.130.484 a mydata:FraudEntry;
+  mydata:ActionTaken "official detention";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "United Kingdom";
+  mydata:DateOfCase "2013-05-04T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Spain";
+  mydata:HazardAnalyticalResult "presence of horse DNA: >1";
+  mydata:HazardSamplingDate "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-04-30T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Czech Republic";
+  mydata:Product "frozen diced beef steak";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.484";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q145>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q29>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q213> .
+
+mydata:20.130.423 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-03-25T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Sweden";
+  mydata:HazardAnalyticalResult "horse DNA: 100";
+  mydata:HazardSamplingDate "2013-11-03T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-04-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Sweden";
+  mydata:Product "frozen roast beef";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.423";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q34>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q34> .
+
+mydata:20.130.748 a mydata:FraudEntry;
+  mydata:ActionTaken "informing authorities";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-05-29T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Sweden";
+  mydata:HazardAnalyticalResult "Horse DNA 3";
+  mydata:HazardSamplingDate "2013-05-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-06-06T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Poland";
+  mydata:Product "frozen kebab";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.748";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q34>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q36> .
+
+mydata:20.161.104 a mydata:FraudEntry;
+  mydata:ActionTaken "detained by operator";
+  mydata:Classifications "feed  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Ukraine";
+  mydata:DateOfCase "2016-12-08T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Switzerland";
+  mydata:HazardAnalyticalResult "stained seeds: 0.15";
+  mydata:HazardSamplingDate "2016-04-07T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "suspicion of adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2016-12-16T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "maize";
+  mydata:ProductCategory "feed materials";
+  mydata:Reference "20.161.104";
+  mydata:RiskDecision "undecided";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q212>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q39>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:20.130.409 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Italy";
+  mydata:DateOfCase "2013-03-21T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Switzerland";
+  mydata:HazardAnalyticalResult "presence of horse DNA > 1";
+  mydata:HazardSamplingDate "2013-06-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-06-05T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Italy";
+  mydata:Product "chilled ravioli stuffed with meat";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "20.130.409";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q38>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q39>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q38> .
+
+mydata:20.161.439 a mydata:FraudEntry;
+  mydata:ActionTaken "recall from consumers";
+  mydata:Classifications "food  -  alert  -  company's own check";
+  mydata:CountryOrigin "Italy";
+  mydata:DateOfCase "2016-10-20T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Switzerland";
+  mydata:HazardAnalyticalResult "85";
+  mydata:HazardSamplingDate "2016-05-10T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "monoethylene glycol (MEG)";
+  mydata:HazardUnits "mg/l";
+  mydata:LastUpdate "2016-11-21T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Switzerland";
+  mydata:Product "red wine";
+  mydata:ProductCategory "alcoholic beverages";
+  mydata:Reference "20.161.439";
+  mydata:RiskDecision "serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q38>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q39>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q39> .
+
+mydata:20.130.194 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-02-15T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "United Kingdom";
+  mydata:HazardAnalyticalResult "horse DNA 5-30";
+  mydata:HazardSamplingDate "2013-07-02T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-05-23T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Ireland";
+  mydata:Product "frozen beef burgers";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.194";
+  mydata:RiskDecision "undecided";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q145>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q27> .
+
+mydata:20.130.262 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-02-27T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "United Kingdom";
+  mydata:HazardAnalyticalResult "presence of horse DNA: 69";
+  mydata:HazardSamplingDate "2013-02-20T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2014-01-28T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "corned beef in natural juice";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.262";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q145>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:20.130.306 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Poland";
+  mydata:DateOfCase "2013-07-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "United Kingdom";
+  mydata:HazardAnalyticalResult "horse DNA: 54.5";
+  mydata:HazardSamplingDate "2013-02-25T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2014-12-03T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "canned braised beef with buckwheat";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.306";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q36>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q145>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
+
+mydata:2.013.033 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Ireland";
+  mydata:DateOfCase "2013-08-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:DistributionStatus "United Kingdom";
+  mydata:HazardAnalyticalResult "horse DNA: 50<--> 70";
+  mydata:HazardSamplingDate "2013-02-20T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-03-21T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "United Kingdom";
+  mydata:Product "cottage pie";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "2.013.033";
+  mydata:RiskDecision "undecided";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q27>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q145>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q145> .
+
+mydata:20.130.406 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  official control on the market";
+  mydata:CountryOrigin "Hungary";
+  mydata:DateOfCase "2013-03-20T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "United Kingdom";
+  mydata:HazardAnalyticalResult "presence of horse DNA: 100";
+  mydata:HazardSamplingDate "1970-01-01T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-04-19T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:NotificationFrom "United Kingdom";
+  mydata:Product "diced beef";
+  mydata:ProductCategory "meat and meat products (other than poultry)";
+  mydata:Reference "20.130.406";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q28>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q145>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q145> .
+
+mydata:20.130.197 a mydata:FraudEntry;
+  mydata:ActionTaken "withdrawal from the market";
+  mydata:Classifications "food  -  information for follow-up  -  company's own check";
+  mydata:CountryOrigin "Romania";
+  mydata:DateOfCase "2013-02-18T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:DistributionStatus "Venezuela";
+  mydata:HazardAnalyticalResult "horse DNA: 3.6";
+  mydata:HazardSamplingDate "2013-06-03T00:00:00.000+02:00"^^xsd:dateTime;
+  mydata:HazardSubstance "adulteration";
+  mydata:HazardUnits "%";
+  mydata:LastUpdate "2013-03-06T00:00:00.000+01:00"^^xsd:dateTime;
+  mydata:NotificationFrom "Germany";
+  mydata:Product "ravioli bolognese";
+  mydata:ProductCategory "prepared dishes and snacks";
+  mydata:Reference "20.130.197";
+  mydata:RiskDecision "not serious";
+  mydata:wdCountryOriginCountryCode <http://www.wikidata.org/entity/Q218>;
+  mydata:wdDistributionStatusCountryCode <http://www.wikidata.org/entity/Q717>;
+  mydata:wdNotificationFromCountryCode <http://www.wikidata.org/entity/Q183> .
